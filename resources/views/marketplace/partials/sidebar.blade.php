@@ -6,7 +6,7 @@
                     <a class="nav-link {{GlobalHelper::activeMenu('transactions')}} " href="/transactions">
                         <i class="far fa-fw fa-file "></i>
                         <p>Transaction
-                            <span class="badge badge-success right">{{GlobalHelper::transactionCount([0,1])}}</span>
+                            <span class="badge badge-success right">0</span>
                         
                         </p>
                     </a>

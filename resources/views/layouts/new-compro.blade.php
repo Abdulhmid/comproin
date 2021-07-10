@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BizLand Bootstrap Template - Index</title>
+  <title>{!! GlobalHelper::config('main-title') !!}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,14 +42,13 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">{!! GlobalHelper::config('email') !!}</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>{!! GlobalHelper::config('phone') !!}</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="{!! GlobalHelper::config('fb') !!}" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="{!! GlobalHelper::config('ig') !!}" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="{!! GlobalHelper::config('tw') !!}" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </section>
@@ -58,7 +57,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">BizLand<span>.</span></a></h1>
+      <h1 class="logo"><a href="index.html">{!! GlobalHelper::config('main-title') !!}<span>.</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
@@ -97,7 +96,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>BizLand</span></h1>
+      <h1>Welcome to <span>{!! GlobalHelper::config('main-title') !!}</span></h1>
       <h2>We are team of talented designers making websites with Bootstrap</h2>
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -134,13 +133,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>BizLand<span>.</span></h3>
+            <h3>{!! GlobalHelper::config('main-title') !!}<span>.</span></h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              {!! GlobalHelper::config('address') !!}<br>
+              <strong>Phone:</strong> {!! GlobalHelper::config('phone') !!}<br>
+              <strong>Email:</strong> {!! GlobalHelper::config('email') !!}<br>
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-@extends('layouts.new-compro')
+@extends('layouts.dash-new')
 
 @section('title', 'Dashboard2')
 

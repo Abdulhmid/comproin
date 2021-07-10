@@ -11,7 +11,7 @@ class Roles extends Model
      *
      * @var array
      */
-    protected $table = 'tj_roles';
+    protected $table = 'roles';
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = []; 

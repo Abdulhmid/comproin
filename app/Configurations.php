@@ -11,7 +11,7 @@ class Configurations extends Model
      *
      * @var array
      */
-    protected $table = 'tj_configurations';
+    protected $table = 'configurations';
     protected $primaryKey = 'id';
     public $timestamps = true;
     protected $guarded = []; 

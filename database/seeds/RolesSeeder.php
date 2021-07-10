@@ -43,6 +43,6 @@ class RolesSeeder extends Seeder
 	        ]
     	];
 	   
-	    DB::table('tj_roles')->insert($data);
+	    DB::table('roles')->insert($data);
     }
 }
